@@ -341,6 +341,9 @@ client.on("interactionCreate", async (interaction) => {
         let embed = new MessageEmbed()
         .setColor("BLUE")
         .setDescription(`<:sh_tick:958961439853395988> **Created A Ticket ${ch}**`)
+        .setFooter({
+          text: "Made By Saksham..#9376"
+        })
         interaction.reply({embeds: [embed], ephemeral: true})
         let button = new MessageActionRow().addComponents(
           new MessageButton()
