@@ -28,10 +28,8 @@ module.exports = client;
 
 // Global Variables
 client.events = new Collection();
-client.cooldowns = new Collection();
 client.categories = fs.readdirSync("./commands/");
 client.commands = new Collection();
-client.subcmd = new Collection();
 
 ["event_handler", "slash_handler", "cmd_handler"].forEach((handler) => {
   require(`./handlers/${handler}`)(client);
