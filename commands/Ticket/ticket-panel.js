@@ -38,8 +38,7 @@ module.exports = new Command({
         .setTitle(`${title}`)
         .setTimestamp()
         .setFooter({
-            text: `${client.user.username}`,
-            iconURL: `${client.user.displayAvatarURL({dynamic: true})}`
+            text: "Made By Saksham..#9376"
         })
         const openbutton = new MessageActionRow().addComponents(
             new MessageButton()
